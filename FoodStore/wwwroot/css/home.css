@@ -1,0 +1,21 @@
+﻿.dishes-pagination li{
+   margin-left:12px;
+}
+
+
+.dishes-pagination .active span{
+
+    font-weight: bold;
+    text-decoration:underline;
+    color:orange;
+}
+
+.btn-see-all {
+    color: orange;
+    inset-inline:18px;
+    font-size:18px;
+}
+
+.btn-see-all:hover {
+    cursor:pointer;
+}

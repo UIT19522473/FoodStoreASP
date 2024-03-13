@@ -1,7 +1,4 @@
-﻿
-@{
-    ViewData["Title"] = "Index";
-}
+﻿@model FoodStore.Models.Customer;
 
 
 @{
@@ -22,24 +19,24 @@
                     <div class="fp__login_area">
                         <h2>Welcome back!</h2>
                         <p>sign up to continue</p>
-                        <form>
+                        <form method="post" asp-controller="Register" asp-action="Submit">
                             <div class="row">
                                 <div class="col-xl-12">
                                     <div class="fp__login_imput">
                                         <label>name</label>
-                                        <input type="text" placeholder="Name">
+                                        <input type="text" placeholder="Name" asp-for="Name">
                                     </div>
                                 </div>
                                 <div class="col-xl-12">
                                     <div class="fp__login_imput">
                                         <label>email</label>
-                                        <input type="email" placeholder="Email">
+                                        <input type="email" placeholder="Email" asp-for="Email">
                                     </div>
                                 </div>
                                 <div class="col-xl-12">
                                     <div class="fp__login_imput">
                                         <label>password</label>
-                                        <input type="password" placeholder="Password">
+                                        <input type="password" placeholder="Password" asp-for="Password">
                                     </div>
                                 </div>
                                 <div class="col-xl-12">
@@ -50,7 +47,7 @@
                                 </div>
                                 <div class="col-xl-12">
                                     <div class="fp__login_imput">
-                                        <button type="submit" class="common_btn">login</button>
+                                        <button type="submit" class="common_btn">Register</button>
                                     </div>
                                 </div>
                             </div>
